@@ -17,3 +17,31 @@ Options you can use in the script:
 * Print the stdout to a log
 * Delete the log from the date marked in MONTH_TO_KEEP
 * Upload bar when the files are uploading manualy
+
+
+# get-s3-file
+
+Download logs or files from S3
+ 
+Usage: python get_s3_file.py [options]
+ 
+Options:
+  -f ..., --log=...       Name of the log to download
+
+  -D ..., --datelog=...   Date to thelog to donwload
+
+  -l, --list              List all lthe content on the storage
+
+  -h, --help              Show this help
+
+  -s, size                Show total size of the bucket
+  
+  -d                      Show debugging information while parsing (disable)
+ 
+Examples:
+  ```
+  python get_s3_file.py --list
+  python get_s3_file.py -f example-of-name.log -D 2011-03-29
+ ```
+ 
+This script requires the boto module and dateutil for Python to be installed. For example: apt-get install python-boto python-dateutil
