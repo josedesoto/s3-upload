@@ -2,7 +2,7 @@
 
 Script  to upload logs or any other files to Amazon Busket. It will upload 1 per day and remove the old logs based in the variable: MONTH_TO_KEEP. 
 
-Option you can use in the script:
+Options you can use in the script:
 
 0. python upload.py (will update the day before (yesterday). No overwrite file. Delete old files)
 0. python upload.py full_update (will update all the files. No overwrite file. Not delete old files)
